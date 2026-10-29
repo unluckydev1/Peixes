@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Peixes cartilaginosos · Tubarão-anjo</title>
+<meta name="description" content="Site educativo de Biologia sobre peixes, tubarões e o tubarão-anjo, com modelo 3D interativo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="off">
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i><b class="rays"></b><b class="grain"></b><b class="current"></b><b class="current"></b>
+  <svg class="drifter drifter-small" viewBox="0 0 120 64"><path d="M8 32c17-22 54-25 78-8l25-18-7 26 7 26-25-18C62 57 25 54 8 32Zm16 0-13-9 2 9-2 9 13-9Z"/></svg>
+  <svg class="drifter drifter-ray" viewBox="0 0 180 100"><path d="M90 18c-17 0-27 12-42 18L5 47l43 8c15 7 25 27 42 27s27-20 42-27l43-8-43-11c-15-6-25-18-42-18Zm-8 10 8-20 8 20M82 75l8 18 8-18"/></svg>
+  <svg class="drifter drifter-long" viewBox="0 0 160 58"><path d="M8 29c24-20 76-21 114-7l29-20-7 27 7 27-29-20C84 50 32 49 8 29Zm24 0-17-12 3 12-3 12 17-12Z"/></svg>
+</div>
+<div class="bar" id="bar"></div>
+
+<header class="top">
+  <a class="brand" href="#inicio">Peixes<span>·</span>Tubarão-anjo</a>
+  <nav id="nav" aria-label="Seções">
+    <a href="#peixes">Peixes</a><a href="#cacao">Cação</a><a href="#anjo">Espécie</a><a href="#modelo3d">3D</a><a href="#conservacao">Conservação</a><a href="#quiz">Quiz</a><a href="#refs">Fontes</a>
+  </nav>
+</header>
+<ul class="dots" id="dots" aria-hidden="true"></ul>
+
+<main>
+<section id="inicio" class="hero" data-theme="off"><span class="section-loop" aria-hidden="true"></span>
+
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+    <p class="label rv">Exposição interativa · Ecossistemas marinhos</p>
+    <h1 class="split"><span>Peixes</span><span>cartilaginosos</span></h1>
+    <p class="lead rv">Tubarões, raias e o tubarão-anjo: conheça suas adaptações, explore o modelo 3D e descubra por que conservar essas espécies importa.</p>
+    </div>
+    <figure class="hero-art" aria-label="Tubar&atilde;o-anjo nadando sobre o fundo do mar">
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <svg class="sonar" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="300" cy="300" r="60"/><circle cx="300" cy="300" r="120"/><circle cx="300" cy="300" r="190"/><circle cx="300" cy="300" r="270"/></g></svg>
+      <img class="hero-photo" src="assets/img/tubarao-anjo-nadando.jfif" alt="Tubar&atilde;o-anjo nadando sobre vegeta&ccedil;&atilde;o marinha" fetchpriority="high">
+      <figcaption><span>Esp&eacute;cie em destaque</span><i>Squatina dumeril</i></figcaption>
+    </figure>
+  </div>
+  <a class="scroll" href="#peixes"><span>Role</span><i></i></a>
+</section>
+
+<section id="peixes" data-theme="mint"><span class="section-loop" aria-hidden="true"></span><div class="wrap">
+  <div class="head"><span class="num" aria-hidden="true">01</span><p class="label rv">Conheça os peixes</p>
+  <h2 class="rv">Mais de <span class="hl">36,7 mil espécies</span></h2>
+  <p class="lead rv">Espécies catalogadas na FishBase até junho de 2026; dos rios mais rasos às profundezas oceânicas.</p></div>
+  <div class="vs">
+    <article class="rv">
+      <img class="draw-img" src="assets/img/peixe-osseo-paleta.png" alt="Peixe ósseo prateado de perfil, isolado em fundo transparente">
+      <h3>Ósseos</h3><p class="k">Esqueleto de osso.</p><p class="p">Em geral têm bexiga natatória. Sardinha, tilápia, atum.</p>
+    </article>
+    <article class="rv">
+      <img class="draw-img shark-photo" src="assets/img/tubarao-anjo-recorte.png" alt="Tubarão-anjo em recorte transparente, sem fundo">
+      <h3>Cartilaginosos</h3><p class="k">Esqueleto de cartilagem.</p><p class="p">Fendas branquiais visíveis. Tubarões, raias, quimeras.</p>
+    </article>
+  </div>
+  <div class="compare-band rv">
+    <div class="compare-heading"><p class="label">Uma compara&ccedil;&atilde;o r&aacute;pida</p><h3>O que muda de um grupo para o outro?</h3></div>
+    <div class="compare-table" role="table" aria-label="Diferen&ccedil;as entre peixes &oacute;sseos e cartilaginosos">
+      <div class="compare-row compare-top" role="row"><span role="columnheader">Adapta&ccedil;&atilde;o</span><b role="columnheader">&Oacute;sseos</b><b role="columnheader">Cartilaginosos</b></div>
+      <div class="compare-row" role="row"><span class="compare-key" role="rowheader"><i class="compare-icon bone-icon" aria-hidden="true"></i>Esqueleto</span><span role="cell">Osso mineralizado</span><span role="cell">Cartilagem leve e flex&iacute;vel</span></div>
+      <div class="compare-row" role="row"><span class="compare-key" role="rowheader"><i class="compare-icon gill-icon" aria-hidden="true"></i>Br&acirc;nquias</span><span role="cell">Protegidas pelo op&eacute;rculo</span><span role="cell">Fendas geralmente vis&iacute;veis</span></div>
+      <div class="compare-row" role="row"><span class="compare-key" role="rowheader"><i class="compare-icon float-icon" aria-hidden="true"></i>Flutua&ccedil;&atilde;o</span><span role="cell">Muitos t&ecirc;m bexiga natat&oacute;ria</span><span role="cell">F&iacute;gado ajuda a controlar a flutuabilidade</span></div>
+    </div>
+  </div>
+  <figure class="fish-photo rv"><img src="assets/img/peixes-osseos-aquario.jfif" alt="Diversas espécies de peixes ósseos nadando em um aquário"><figcaption>Peixes ósseos: grande diversidade de formas e cores.</figcaption></figure>
+</div></section>
+
+<section id="cacao" data-theme="off"><span class="section-loop" aria-hidden="true"></span><div class="wrap split2">
+  <div class="head"><span class="num" aria-hidden="true">02</span><p class="label rv">Tubarões e cação</p>
+  <h2 class="rv">Tubarão ou <span class="hl">cação</span>?</h2>
+  <p class="lead rv">O mesmo animal, outro nome no mercado.</p></div>
+  <ol class="steps">
+    <li class="rv"><b>Tubarões</b><p class="p">Peixes cartilaginosos do grupo dos elasmobrânquios.</p></li>
+    <li class="rv"><b>“Cação”</b><p class="p">Nome comercial da carne de tubarão, vendida sem indicar a espécie.</p></li>
+    <li class="rv"><b>Identificar</b><p class="p">Permite monitorar a pesca e evitar espécies ameaçadas.</p></li>
+  </ol>
+</div></section>
+
+<section id="anjo" data-theme="aqua"><span class="section-loop" aria-hidden="true"></span><div class="wrap">
+  <div class="head"><span class="num" aria-hidden="true">03</span><p class="label rv">Perfil científico</p>
+  <h2 class="rv">Tubarão-<span class="hl">anjo</span></h2>
+  <p class="lead rv">Corpo achatado como o de uma raia, mas com fendas branquiais nas laterais.</p></div>
+  <div class="gallery rv" aria-label="Fotografias do tubarão-anjo"><figure class="photo main-photo"><img src="assets/img/tubarao-anjo-principal.jpg" alt="Tubarão-anjo camuflado sobre o fundo arenoso"><figcaption>Camuflagem no fundo do mar</figcaption></figure><figure class="photo"><img src="assets/img/tubarao-anjo-nadando.jfif" alt="Tubarão-anjo nadando sobre o fundo marinho"><figcaption>Em seu habitat</figcaption></figure><figure class="photo"><img src="assets/img/tubarao-anjo-vista-superior.jfif" alt="Tubarão-anjo visto de cima"><figcaption>Corpo achatado e nadadeiras largas</figcaption></figure></div>
+  <p class="note rv">Espécie do modelo 3D: <b><i>Squatina dumeril</i></b>, o tubarão-anjo-do-Atlântico.</p>
+  <div class="field-guide rv" aria-label="Destaques do tubar&atilde;o-anjo">
+    <article class="field-stat"><span class="stat-mark depth-mark" aria-hidden="true">&#8597;</span><p class="stat-label">Profundidade comum</p><strong>40&ndash;250 <small>m</small></strong><p>fundos de areia e lodo</p></article>
+    <article class="field-stat"><span class="stat-mark egg-mark" aria-hidden="true">&#9675;</span><p class="stat-label">Filhotes por ninhada</p><strong>4&ndash;25</strong><p>viv&iacute;paro aplacent&aacute;rio</p></article>
+    <article class="field-stat"><span class="stat-mark ambush-mark" aria-hidden="true">&#8767;</span><p class="stat-label">Estrat&eacute;gia de ca&ccedil;a</p><strong>Emboscada</strong><p>camuflado no fundo marinho</p></article>
+  </div>
+  <div class="facts" aria-label="Guia r&aacute;pido da esp&eacute;cie">
+    <div class="fact-item"><span class="fact-index">01</span><div><p class="fact-title">Grupo</p><p class="fact-copy">Chondrichthyes &middot; Squatiniformes</p></div></div>
+    <div class="fact-item"><span class="fact-index">02</span><div><p class="fact-title">Como reconhecer</p><p class="fact-copy">Peitorais largas, olhos no topo e fendas branquiais laterais</p></div></div>
+    <div class="fact-item"><span class="fact-index">03</span><div><p class="fact-title">Card&aacute;pio</p><p class="fact-copy">Peixes, crust&aacute;ceos e moluscos</p></div></div>
+    <div class="fact-item"><span class="fact-index">04</span><div><p class="fact-title">Risco</p><p class="fact-copy">Captura incidental em redes e arrastos</p></div></div>
+    <div class="fact-item fact-wide"><span class="fact-index">05</span><div><p class="fact-title">Conserva&ccedil;&atilde;o</p><p class="fact-copy"><i>Squatina dumeril</i> &mdash; Pouco Preocupante na avalia&ccedil;&atilde;o IUCN de 2017; a captura incidental ainda merece aten&ccedil;&atilde;o.</p></div></div>
+  </div>
+</div></section>
+
+<section id="modelo3d" data-theme="mint"><span class="section-loop" aria-hidden="true"></span><div class="wrap">
+  <div class="head"><span class="num" aria-hidden="true">04</span><p class="label rv">Maquete virtual</p>
+  <h2 class="rv">Gire o <span class="hl">tubarão-anjo</span></h2>
+  <p class="lead rv">Arraste para girar. Pince ou use a roda do mouse para aproximar.</p></div>
+  <div class="stage rv" id="stage">
+    <iframe title="Modelo 3D do tubarão" src="https://sketchfab.com/models/2192cb9cb5594f8b81f5fc03eb80981c/embed" frameborder="0" loading="lazy" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+  </div>
+  <p class="note rv"><a href="https://sketchfab.com/3d-models/atlantic-angel-shark-squatina-dumeril-2192cb9cb5594f8b81f5fc03eb80981c" target="_blank" rel="nofollow noopener">Atlantic Angel Shark · <i>Squatina dumeril</i></a> por <a href="https://sketchfab.com/MTSUichthyology" target="_blank" rel="nofollow noopener">MTSUichthyology</a> no Sketchfab. Requer internet.</p>
+</div></section>
+
+<section id="conservacao" data-theme="off"><span class="section-loop" aria-hidden="true"></span><div class="wrap">
+  <div class="head"><span class="num" aria-hidden="true">05</span><p class="label rv">Conservação</p>
+  <h2 class="rv">Proteger é <span class="hl">possível</span></h2>
+  <p class="lead rv">Pequenas escolhas mudam o destino de espécies inteiras.</p></div>
+  <div class="conservation-gallery rv" aria-label="Impactos do lixo pl&aacute;stico no oceano">
+    <figure class="conservation-photo entangled"><img src="assets/img/caranguejo-plastico.webp" alt="Caranguejo marinho preso em uma embalagem pl&aacute;stica no oceano" loading="lazy"><figcaption><span>01 &middot; Emaranhamento</span><b>Res&iacute;duos podem virar armadilhas</b><small>Redes e pl&aacute;sticos descartados continuam no mar e colocam animais em risco.</small></figcaption></figure>
+    <figure class="conservation-photo debris"><img src="assets/img/peixe-residuos.webp" alt="Peixe nadando em uma &aacute;rea do oceano com res&iacute;duos pl&aacute;sticos" loading="lazy"><figcaption><span>02 &middot; Habitat</span><b>O lixo tamb&eacute;m transforma o ambiente</b><small>Fragmentos e sacolas se espalham pela coluna d&rsquo;&aacute;gua e pelo fundo.</small></figcaption></figure>
+  </div>
+  <div class="conservation-path" aria-label="Da amea&ccedil;a &agrave; a&ccedil;&atilde;o">
+    <article class="conserve-step rv">
+      <span class="path-number">01</span><p class="label">A press&atilde;o</p><h3>O que coloca tubar&otilde;es e raias em risco?</h3>
+      <ul><li><b>Pesca incidental</b><span>Animais capturados em redes e arrastos dirigidos a outras esp&eacute;cies.</span></li><li><b>Perda de habitat</b><span>Degrada&ccedil;&atilde;o de &aacute;reas costeiras e do fundo marinho.</span></li><li><b>Recupera&ccedil;&atilde;o lenta</b><span>Crescimento e reprodu&ccedil;&atilde;o demorados tornam algumas popula&ccedil;&otilde;es mais vulner&aacute;veis.</span></li></ul>
+    </article>
+    <article class="conserve-step rv">
+      <span class="path-number">02</span><p class="label">A prote&ccedil;&atilde;o</p><h3>Conservar exige conhecer</h3>
+      <ul><li><b>Identificar esp&eacute;cies</b><span>Registros mostram o que &eacute; capturado e onde.</span></li><li><b>Monitorar popula&ccedil;&otilde;es</b><span>Pesquisas ajudam a acompanhar mudan&ccedil;as ao longo do tempo.</span></li><li><b>Reduzir impactos</b><span>Regras de pesca e &aacute;reas marinhas protegidas orientam medidas de manejo.</span></li></ul>
+    </article>
+    <article class="conserve-step rv">
+      <span class="path-number">03</span><p class="label">A escolha</p><h3>O que cada pessoa pode fazer</h3>
+      <ul><li><b>Pergunte o nome da esp&eacute;cie</b><span>&ldquo;ca&ccedil;&atilde;o&rdquo; sozinho n&atilde;o informa qual tubar&atilde;o foi vendido.</span></li><li><b>Prefira pescado rastre&aacute;vel</b><span>Origem identificada ajuda a fazer escolhas mais conscientes.</span></li><li><b>Evite pl&aacute;stico descart&aacute;vel</b><span>Use menos, descarte corretamente e mantenha res&iacute;duos longe de rios e praias.</span></li></ul>
+    </article>
+  </div>
+  <div class="conservation-close rv"><span aria-hidden="true">&#8594;</span><p>Da observa&ccedil;&atilde;o &agrave; atitude: <b>informa&ccedil;&atilde;o tamb&eacute;m protege o oceano.</b></p></div>
+</div></section>
+
+<section id="quiz" data-theme="aqua"><span class="section-loop" aria-hidden="true"></span><div class="wrap narrow">
+  <div class="head"><span class="num" aria-hidden="true">06</span><p class="label rv">Investiga&ccedil;&atilde;o do tubar&atilde;o-anjo</p>
+  <h2 class="rv">Miss&atilde;o de <span class="hl">campo</span></h2>
+  <p class="lead rv">Leia as pistas, identifique a esp&eacute;cie e escolha como ajudar a proteger o oceano.</p></div>
+  <div class="qbox rv" id="qbox" aria-live="polite"></div>
+</div></section>
+
+<section id="refs" data-theme="off"><span class="section-loop" aria-hidden="true"></span><div class="wrap">
+  <div class="head"><span class="num" aria-hidden="true">07</span><p class="label rv">Fontes e créditos</p>
+  <h2 class="rv">Fontes e <span class="hl">créditos</span></h2></div>
+  <ol class="refs rv">
+    <li><a href="https://doi.org/10.2305/IUCN.UK.2019-1.RLTS.T197087A22515424.en" target="_blank" rel="noopener">IUCN Red List — <i>Squatina dumeril</i></a>. Avaliação de 2017.</li>
+    <li><a href="https://repository.library.noaa.gov/view/noaa/42001/noaa_42001_DS1.pdf" target="_blank" rel="noopener">NOAA &mdash; Atlantic Angel Shark (<i>Squatina dumeril</i>)</a>. Habitat, alimenta&ccedil;&atilde;o e reprodu&ccedil;&atilde;o.</li>
+    <li><a href="https://www.fisheries.noaa.gov/insight/entanglement-marine-life-risks-and-response" target="_blank" rel="noopener">NOAA Fisheries &mdash; Entanglement of Marine Life</a>. Riscos de redes perdidas e res&iacute;duos para animais marinhos.</li>
+    <li><a href="https://www.fishbase.se/home.php" target="_blank" rel="noopener">FishBase</a>. Estatísticas de espécies consultadas em junho de 2026.</li>
+    <li>Modelo 3D: “Atlantic Angel Shark · <i>Squatina dumeril</i>”, por MTSUichthyology, via Sketchfab.</li>
+    <li>Fotografias anexadas ao projeto; os créditos originais não vieram nos arquivos.</li><li>Peixe ósseo: <a href="https://commons.wikimedia.org/wiki/File:Abramis_brama.png" target="_blank" rel="noopener">Abramis brama</a>, por Lvova e Ellicrum, Wikimedia Commons, CC BY-SA 4.0. A imagem foi adaptada para remover o fundo.</li>
+  </ol>
+
+</div></section>
+</main>
+<footer>Peixes cartilaginosos · uma exposição sobre forma, adaptação e conservação marinha.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
