@@ -7,6 +7,7 @@
 <title>Peixes cartilaginosos · Tubarão-anjo</title>
 <meta name="description" content="Site educativo de Biologia sobre peixes, tubarões e o tubarão-anjo, com modelo 3D interativo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -38,7 +39,7 @@
     <figure class="hero-art" aria-label="Tubar&atilde;o-anjo nadando sobre o fundo do mar">
       <div class="hero-orbit" aria-hidden="true"></div>
       <svg class="sonar" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="300" cy="300" r="60"/><circle cx="300" cy="300" r="120"/><circle cx="300" cy="300" r="190"/><circle cx="300" cy="300" r="270"/></g></svg>
-      <img class="hero-photo" src="assets/img/tubarao-anjo-nadando.jfif" alt="Tubar&atilde;o-anjo nadando sobre vegeta&ccedil;&atilde;o marinha" fetchpriority="high">
+      <img class="hero-photo" src="assets/img/tubarao-anjo-nadando.jfif" alt="Tubar&atilde;o-anjo nadando sobre vegeta&ccedil;&atilde;o marinha" fetchpriority="high" decoding="async">
       <figcaption><span>Esp&eacute;cie em destaque</span><i>Squatina dumeril</i></figcaption>
     </figure>
   </div>
@@ -51,11 +52,11 @@
   <p class="lead rv">Espécies catalogadas na FishBase até junho de 2026; dos rios mais rasos às profundezas oceânicas.</p></div>
   <div class="vs">
     <article class="rv">
-      <img class="draw-img" src="assets/img/peixe-osseo-paleta.png" alt="Peixe ósseo prateado de perfil, isolado em fundo transparente">
+      <img decoding="async" loading="lazy" class="draw-img" src="assets/img/peixe-osseo-paleta.webp" alt="Peixe ósseo prateado de perfil, isolado em fundo transparente">
       <h3>Ósseos</h3><p class="k">Esqueleto de osso.</p><p class="p">Em geral têm bexiga natatória. Sardinha, tilápia, atum.</p>
     </article>
     <article class="rv">
-      <img class="draw-img shark-photo" src="assets/img/tubarao-anjo-recorte.png" alt="Tubarão-anjo em recorte transparente, sem fundo">
+      <img decoding="async" loading="lazy" class="draw-img shark-photo" src="assets/img/tubarao-anjo-recorte.webp" alt="Tubarão-anjo em recorte transparente, sem fundo">
       <h3>Cartilaginosos</h3><p class="k">Esqueleto de cartilagem.</p><p class="p">Fendas branquiais visíveis. Tubarões, raias, quimeras.</p>
     </article>
   </div>
@@ -68,7 +69,20 @@
       <div class="compare-row" role="row"><span class="compare-key" role="rowheader"><i class="compare-icon float-icon" aria-hidden="true"></i>Flutua&ccedil;&atilde;o</span><span role="cell">Muitos t&ecirc;m bexiga natat&oacute;ria</span><span role="cell">F&iacute;gado ajuda a controlar a flutuabilidade</span></div>
     </div>
   </div>
-  <figure class="fish-photo rv"><img src="assets/img/peixes-osseos-aquario.jfif" alt="Diversas espécies de peixes ósseos nadando em um aquário"><figcaption>Peixes ósseos: grande diversidade de formas e cores.</figcaption></figure>
+  <figure class="fish-photo rv"><img decoding="async" loading="lazy" src="assets/img/peixes-osseos-aquario.jfif" alt="Diversas espécies de peixes ósseos nadando em um aquário"><figcaption>Peixes ósseos: grande diversidade de formas e cores.</figcaption></figure>
+  <div class="specimen-explorer rv" role="group" aria-labelledby="explorer-title">
+    <div class="explorer-intro"><p class="label">Comparador ao toque</p><h3 id="explorer-title">Escolha um grupo para explorar</h3><p class="p">Alterne entre os exemplares e compare suas adapta&ccedil;&otilde;es.</p></div>
+    <div class="fish-tabs" role="group" aria-label="Escolha um grupo de peixes">
+      <button class="fish-tab active" aria-pressed="true" data-image="assets/img/peixe-osseo-paleta.webp" data-alt="Peixe &oacute;sseo prateado isolado" data-name="Peixes &oacute;sseos" data-summary="O esqueleto &eacute; formado por osso mineralizado. O grupo re&uacute;ne desde sardinhas at&eacute; atuns e til&aacute;pias." data-skeleton="Osso mineralizado" data-gills="Br&acirc;nquias protegidas por op&eacute;rculo" data-float="Muitos possuem bexiga natat&oacute;ria">Oss&eacute;os</button>
+      <button class="fish-tab" aria-pressed="false" data-image="assets/img/tubarao-anjo-recorte.webp" data-alt="Tubar&atilde;o-anjo, exemplo de peixe cartilaginoso" data-name="Cartilaginosos" data-summary="O esqueleto &eacute; feito de cartilagem. Tubar&otilde;es, raias e quimeras fazem parte deste grupo." data-skeleton="Cartilagem leve e flex&iacute;vel" data-gills="Fendas branquiais vis&iacute;veis" data-float="F&iacute;gado ajuda na flutuabilidade">Cartilaginosos</button>
+    </div>
+    <article class="explorer-card" id="explorer-card" aria-live="polite">
+      <div class="explorer-image"><img id="explorer-image" src="assets/img/peixe-osseo-paleta.webp" alt="Peixe &oacute;sseo prateado isolado" loading="lazy" decoding="async"></div>
+      <div class="explorer-copy"><span class="explorer-tag">EXEMPLAR 01</span><h3 id="explorer-name">Peixes &oacute;sseos</h3><p id="explorer-summary">O esqueleto &eacute; formado por osso mineralizado. O grupo re&uacute;ne desde sardinhas at&eacute; atuns e til&aacute;pias.</p>
+        <dl class="explorer-facts"><div><dt>Esqueleto</dt><dd id="explorer-skeleton">Osso mineralizado</dd></div><div><dt>Br&acirc;nquias</dt><dd id="explorer-gills">Br&acirc;nquias protegidas por op&eacute;rculo</dd></div><div><dt>Flutua&ccedil;&atilde;o</dt><dd id="explorer-float">Muitos possuem bexiga natat&oacute;ria</dd></div></dl>
+      </div>
+    </article>
+  </div>
 </div></section>
 
 <section id="cacao" data-theme="off"><span class="section-loop" aria-hidden="true"></span><div class="wrap split2">
@@ -86,7 +100,19 @@
   <div class="head"><span class="num" aria-hidden="true">03</span><p class="label rv">Perfil científico</p>
   <h2 class="rv">Tubarão-<span class="hl">anjo</span></h2>
   <p class="lead rv">Corpo achatado como o de uma raia, mas com fendas branquiais nas laterais.</p></div>
-  <div class="gallery rv" aria-label="Fotografias do tubarão-anjo"><figure class="photo main-photo"><img src="assets/img/tubarao-anjo-principal.jpg" alt="Tubarão-anjo camuflado sobre o fundo arenoso"><figcaption>Camuflagem no fundo do mar</figcaption></figure><figure class="photo"><img src="assets/img/tubarao-anjo-nadando.jfif" alt="Tubarão-anjo nadando sobre o fundo marinho"><figcaption>Em seu habitat</figcaption></figure><figure class="photo"><img src="assets/img/tubarao-anjo-vista-superior.jfif" alt="Tubarão-anjo visto de cima"><figcaption>Corpo achatado e nadadeiras largas</figcaption></figure></div>
+  <div class="gallery rv" aria-label="Fotografias do tubarão-anjo"><figure class="photo main-photo"><img decoding="async" loading="lazy" src="assets/img/tubarao-anjo-principal.jpg" alt="Tubarão-anjo camuflado sobre o fundo arenoso"><figcaption>Camuflagem no fundo do mar</figcaption></figure><figure class="photo"><img decoding="async" loading="lazy" src="assets/img/tubarao-anjo-nadando.jfif" alt="Tubarão-anjo nadando sobre o fundo marinho"><figcaption>Em seu habitat</figcaption></figure><figure class="photo"><img decoding="async" loading="lazy" src="assets/img/tubarao-anjo-vista-superior.jfif" alt="Tubarão-anjo visto de cima"><figcaption>Corpo achatado e nadadeiras largas</figcaption></figure></div>
+  <div class="anatomy-lab rv" role="group" aria-labelledby="lab-title-heading">
+    <div class="lab-intro"><p class="label">Explore a anatomia</p><h3 id="lab-title-heading">Toque nos pontos e descubra como reconhecer o tubar&atilde;o-anjo</h3><p class="p">Tr&ecirc;s pistas visuais ajudam a distinguir este tubar&atilde;o de uma raia.</p></div>
+    <div class="lab-layout">
+      <figure class="lab-specimen"><img src="assets/img/tubarao-anjo-principal.jpg" alt="Tubar&atilde;o-anjo camuflado no fundo arenoso, visto de cima" loading="lazy" decoding="async">
+        <button class="hotspot" style="--x:66%;--y:22%" data-title="Olhos no topo" data-copy="Os olhos ficam na parte superior da cabe&ccedil;a. Assim, ele observa o entorno mesmo quase enterrado na areia." aria-label="Descobrir sobre os olhos" aria-pressed="false">1</button>
+        <button class="hotspot" style="--x:60%;--y:51%" data-title="Fendas branquiais" data-copy="As fendas aparecem nas laterais, atr&aacute;s da cabe&ccedil;a. Essa pista ajuda a separar o tubar&atilde;o-anjo das raias." aria-label="Descobrir sobre as fendas branquiais" aria-pressed="false">2</button>
+        <button class="hotspot" style="--x:39%;--y:38%" data-title="Peitorais largas" data-copy="As nadadeiras peitorais abertas achatam o contorno do corpo e ajudam na camuflagem junto ao fundo." aria-label="Descobrir sobre as nadadeiras peitorais" aria-pressed="false">3</button>
+      </figure>
+      <div class="lab-card" aria-live="polite"><span class="lab-step">INTERA&Ccedil;&Atilde;O 1 / 3</span><h4 id="lab-title">Escolha uma pista na imagem</h4><p id="lab-copy">Observe o corpo achatado e toque nos marcadores numerados para explorar detalhes.</p><div class="lab-progress"><i></i><i></i><i></i></div></div>
+    </div>
+  </div>
+  <div class="purpose-lab rv hunt-lab" aria-labelledby="hunt-title"><div class="purpose-heading"><span class="purpose-step">SEQU&Ecirc;NCIA DE CA&Ccedil;A</span><h3 id="hunt-title">A emboscada em tr&ecirc;s momentos</h3><p>Acompanhe como camuflagem e espera se transformam em um ataque r&aacute;pido.</p></div><div class="hunt-scene" data-state="wait"><div class="hunt-water" aria-hidden="true"></div><div class="hunt-floor" aria-hidden="true"></div><span class="hunt-depth-label">Fundo arenoso</span><img class="hunt-shark" src="assets/img/tubarao-anjo-recorte.webp" alt="Tubar&atilde;o-anjo camuflado junto ao fundo" loading="lazy" decoding="async"><svg class="hunt-prey" viewBox="0 0 120 60" aria-hidden="true"><path d="M8 30c18-21 54-23 78-7l24-17-7 24 7 24-24-17C62 53 26 51 8 30Zm23 0-16-12 3 12-3 12 16-12Z"/></svg><span class="hunt-motion" aria-hidden="true"></span></div><div class="hunt-controls"><div class="hunt-stages" role="group" aria-label="Etapas da ca&ccedil;a"><button class="hunt-stage active" data-state="wait" aria-pressed="true"><span>01</span>Espera</button><button class="hunt-stage" data-state="approach" aria-pressed="false"><span>02</span>Aproxima&ccedil;&atilde;o</button><button class="hunt-stage" data-state="strike" aria-pressed="false"><span>03</span>Arranque</button></div><div class="hunt-caption" aria-live="polite"><b id="hunt-label">Im&oacute;vel e camuflado</b><p id="hunt-copy">O padr&atilde;o do corpo se confunde com o substrato enquanto o animal espera.</p></div><button class="hunt-play" id="hunt-play">Reproduzir a sequ&ecirc;ncia</button></div></div>
   <p class="note rv">Espécie do modelo 3D: <b><i>Squatina dumeril</i></b>, o tubarão-anjo-do-Atlântico.</p>
   <div class="field-guide rv" aria-label="Destaques do tubar&atilde;o-anjo">
     <article class="field-stat"><span class="stat-mark depth-mark" aria-hidden="true">&#8597;</span><p class="stat-label">Profundidade comum</p><strong>40&ndash;250 <small>m</small></strong><p>fundos de areia e lodo</p></article>
@@ -107,7 +133,8 @@
   <h2 class="rv">Gire o <span class="hl">tubarão-anjo</span></h2>
   <p class="lead rv">Arraste para girar. Pince ou use a roda do mouse para aproximar.</p></div>
   <div class="stage rv" id="stage">
-    <iframe title="Modelo 3D do tubarão" src="https://sketchfab.com/models/2192cb9cb5594f8b81f5fc03eb80981c/embed" frameborder="0" loading="lazy" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+    <div class="stage-poster" aria-hidden="true"><img src="assets/img/tubarao-anjo-nadando.jfif" alt=""><span>Preparando o modelo 3D...</span></div>
+    <iframe title="Modelo 3D do tubarão" data-src="https://sketchfab.com/models/2192cb9cb5594f8b81f5fc03eb80981c/embed" frameborder="0" loading="lazy" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
   </div>
   <p class="note rv"><a href="https://sketchfab.com/3d-models/atlantic-angel-shark-squatina-dumeril-2192cb9cb5594f8b81f5fc03eb80981c" target="_blank" rel="nofollow noopener">Atlantic Angel Shark · <i>Squatina dumeril</i></a> por <a href="https://sketchfab.com/MTSUichthyology" target="_blank" rel="nofollow noopener">MTSUichthyology</a> no Sketchfab. Requer internet.</p>
 </div></section>
@@ -117,8 +144,8 @@
   <h2 class="rv">Proteger é <span class="hl">possível</span></h2>
   <p class="lead rv">Pequenas escolhas mudam o destino de espécies inteiras.</p></div>
   <div class="conservation-gallery rv" aria-label="Impactos do lixo pl&aacute;stico no oceano">
-    <figure class="conservation-photo entangled"><img src="assets/img/caranguejo-plastico.webp" alt="Caranguejo marinho preso em uma embalagem pl&aacute;stica no oceano" loading="lazy"><figcaption><span>01 &middot; Emaranhamento</span><b>Res&iacute;duos podem virar armadilhas</b><small>Redes e pl&aacute;sticos descartados continuam no mar e colocam animais em risco.</small></figcaption></figure>
-    <figure class="conservation-photo debris"><img src="assets/img/peixe-residuos.webp" alt="Peixe nadando em uma &aacute;rea do oceano com res&iacute;duos pl&aacute;sticos" loading="lazy"><figcaption><span>02 &middot; Habitat</span><b>O lixo tamb&eacute;m transforma o ambiente</b><small>Fragmentos e sacolas se espalham pela coluna d&rsquo;&aacute;gua e pelo fundo.</small></figcaption></figure>
+    <figure class="conservation-photo entangled"><img decoding="async" src="assets/img/caranguejo-plastico.webp" alt="Caranguejo marinho preso em uma embalagem pl&aacute;stica no oceano" loading="lazy"><figcaption><span>01 &middot; Emaranhamento</span><b>Res&iacute;duos podem virar armadilhas</b><small>Redes e pl&aacute;sticos descartados continuam no mar e colocam animais em risco.</small></figcaption></figure>
+    <figure class="conservation-photo debris"><img decoding="async" src="assets/img/peixe-residuos.webp" alt="Peixe nadando em uma &aacute;rea do oceano com res&iacute;duos pl&aacute;sticos" loading="lazy"><figcaption><span>02 &middot; Habitat</span><b>O lixo tamb&eacute;m transforma o ambiente</b><small>Fragmentos e sacolas se espalham pela coluna d&rsquo;&aacute;gua e pelo fundo.</small></figcaption></figure>
   </div>
   <div class="conservation-path" aria-label="Da amea&ccedil;a &agrave; a&ccedil;&atilde;o">
     <article class="conserve-step rv">
